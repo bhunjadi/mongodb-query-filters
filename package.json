@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "test": "TESTBUILD=true webpack && mocha test-dist/bundle.js --require source-map-support/register && rm -rf test-dist"
+    "test": "mocha-webpack 'tests/**/*.ts' && rm -rf test-dist",
+    "test-watch": "mocha-webpack --watch 'tests/**/*.ts' && rm -rf test-dist"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
     "mocha": "^6.2.1",
+    "mocha-webpack": "^2.0.0-beta.0",
     "source-map-support": "^0.5.13",
     "ts-loader": "^6.2.0",
     "typescript": "^3.6.4",

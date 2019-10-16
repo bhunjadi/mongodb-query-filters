@@ -7,8 +7,6 @@ const outputPath = path.resolve(__dirname, isTest ? 'test-dist' : 'dist');
 const entry = isTest ? glob.sync(path.resolve(__dirname, 'tests/**/*.test.ts')) : './src/index.ts';
 const devtool = isTest ? 'source-map' : undefined;
 
-console.log(entry);
-
 module.exports = {
   entry,
   devtool,

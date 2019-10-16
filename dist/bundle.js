@@ -90,11 +90,11 @@
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-/*! exports provided: adder */
+/*! exports provided: processFilters */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"adder\", function() { return adder; });\nfunction adder(a, b) {\n    return a + b;\n}\n\n\n//# sourceURL=webpack:///./src/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"processFilters\", function() { return processFilters; });\nfunction processFilters(a) {\n    return a;\n}\n\n\n//# sourceURL=webpack:///./src/index.ts?");
 
 /***/ })
 
