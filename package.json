@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "build": "webpack",
+    "lint": "eslint src/**/*.ts",
     "test": "mocha-webpack 'tests/**/*.ts' && rm -rf test-dist",
     "test-watch": "mocha-webpack --watch 'tests/**/*.ts' && rm -rf test-dist"
   },
@@ -14,6 +15,7 @@
   "devDependencies": {
     "@types/chai": "^4.2.3",
     "@types/mocha": "^5.2.7",
+    "@types/sinon": "^7.5.0",
     "@typescript-eslint/eslint-plugin": "^2.4.0",
     "@typescript-eslint/parser": "^2.4.0",
     "chai": "^4.2.0",
@@ -23,6 +25,7 @@
     "mocha": "^6.2.1",
     "mocha-webpack": "^2.0.0-beta.0",
     "prettier": "^1.18.2",
+    "sinon": "^7.5.0",
     "source-map-support": "^0.5.13",
     "ts-loader": "^6.2.0",
     "typescript": "^3.6.4",
